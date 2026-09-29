@@ -1,149 +1,29 @@
-1.1 Introduction
+# Phase 1: Brainstorming & Ideation
 
-ComicCraft is an AI-based web application designed to generate personalized comic stories and illustrations automatically. The application uses Generative Artificial Intelligence to transform simple story ideas into structured comic panels with narration, character dialogues, and images.
 
-Traditional comic creation requires creative writing, drawing skills, and considerable time. ComicCraft aims to simplify this process by providing an easy-to-use platform where users can generate comics by entering a few details.
+## Problem Statement
+Managing daily and event-based expenses manually is tedious and lacks actionable budget insights.
 
-1.2 Problem Statement
+## Ideation & Solution
+PocketSmart AI automates budget tracking by using Google Gemini 1.5 multimodal AI to scan receipts, parse costs, and provide budget-conscious recommendations.
 
-Creating comic books manually requires storytelling skills, illustration abilities, and a significant amount of time. Many users have creative ideas but may not have the technical or artistic skills required to turn those ideas into complete comics.
+## Target Audience
+Students, homemakers, and small teams needing fast, frictionless expense breakdowns.
 
-The proposed ComicCraft application addresses this problem by automating story generation, dialogue writing, illustration creation, and PDF export using AI technologies.
 
-1.3 Proposed Solution
+# Phase 1: Brainstorming & Ideation
 
-ComicCraft provides a web-based platform where users can enter a story prompt, character name, setting, story tone, and preferred art style.
+- *Date:* 29 September 2026
+- *Team ID:* 08
+- *Project Name:* ComicCraft - Al Comic Story Creator using Gemini Models
+- *Maximum Marks:* 3 Marks
 
-The application processes these inputs using Gemini AI models to generate a structured comic outline and detailed narration. Stable Diffusion is used to generate illustrations for each panel. The completed comic is displayed on a preview page and can be downloaded as a PDF.
+---
 
-1.4 Objectives
+## Step 1: Brainstorm and Idea Listing
 
-To develop an AI-powered comic story generation application.
-
-To generate structured comic storylines using Gemini AI.
-
-To create character dialogues and narration automatically.
-
-To generate comic-style illustrations using Stable Diffusion.
-
-To provide a user-friendly web interface.
-
-To display generated comic panels in sequence.
-
-To export the completed comic into PDF format.
-
-To reduce the time and effort involved in manual comic creation.
-
-1.5 Scope of the Project
-
-The project focuses on automatic comic generation based on user-provided prompts. It supports different story settings, tones, characters, and illustration styles.
-
-The application includes:
-
-AI-based story outline generation.
-
-Automatic narration and dialogue creation.
-
-AI-generated comic illustrations.
-
-Panel-by-panel comic previews.
-
-PDF export functionality.
-
-Web-based user interaction.
-
-The initial project version focuses on generating individual comics. User accounts, comic libraries, and multi-page story arcs are possible future enhancements.
-
-1.6 Proposed Features
-
-Feature
-
-	
-
-Description
-
-
-
-
-Story Prompt
-
-	
-
-Enter a creative story idea
-
-
-
-
-Character Name
-
-	
-
-Specify the main character
-
-
-
-
-Setting
-
-	
-
-Select the story location
-
-
-
-
-Story Tone
-
-	
-
-Choose funny, dramatic, or other moods
-
-
-
-
-Art Style
-
-	
-
-Select anime, realistic, or comic-book styles
-
-
-
-
-Story Generation
-
-	
-
-Generate a structured comic outline and narration
-
-
-
-
-Image Generation
-
-	
-
-Create illustrations for each panel
-
-
-
-
-Comic Preview
-
-	
-
-View the completed comic panel-by-panel
-
-
-
-
-PDF Export
-
-	
-
-Download the comic as a PDF
-
-1.7 Expected Outcome
-
-The expected outcome is a functional web application that transforms a user's creative idea into a complete illustrated comic. It should provide a simple workflow from story input to comic preview and PDF export.
-
+| S.No | Team Member | Idea / Suggestion | Category | Group No. |
+|------|-------------|-------------------|----------|-----------|
+| 1 | monika v| Multimodal receipt image parsing using Google Gemini 1.5 Flash API | AI Architecture & Vision | Group 07 |
+| 2 | latchaya m| Automated line-item expense categorization and tax breakdown | Data Processing & Logic | Group 07|
+| 3 | pavithra u | Dynamic Jinja2 web interface for intuitive mobile and desktop uploads | Frontend & UI/UX | Group 07|
