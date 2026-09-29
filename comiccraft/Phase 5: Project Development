@@ -1,0 +1,226 @@
+5.1 Introduction
+
+The Project Development Phase involves implementing the ComicCraft application using Python, FastAPI, Gemini AI, Stable Diffusion, HTML, CSS, and Jinja2.
+
+The application is divided into independent modules to simplify development, debugging, maintenance, and integration.
+
+5.2 Development Environment Setup
+
+First, install Python and Visual Studio Code. Open the project folder in VS Code and create a virtual environment.
+
+mkdir ComicCraft
+cd ComicCraft
+
+python -m venv env
+
+For Windows:
+
+env\Scripts\activate
+
+Install the required packages:
+
+pip install fastapi uvicorn jinja2 python-multipart
+pip install google-generativeai diffusers transformers
+pip install torch fpdf pillow accelerate
+
+The precise package versions and compatible API libraries should be confirmed before implementation.
+
+5.3 Backend Development
+
+The backend is developed using FastAPI. It receives user input, calls AI generation functions, organizes the generated comic, and handles PDF export.
+
+Main Application – main.py
+from fastapi import FastAPI
+from app.routes import router
+
+app = FastAPI(
+    title="ComicCraft",
+    description="AI Comic Story Creator",
+    version="1.0"
+)
+
+app.include_router(router)
+
+This creates the FastAPI application and connects the project routes.
+
+Story Outline Generation – gemini_flash.py
+
+The generate_outline() function uses Gemini Flash to produce a structured comic outline based on the user's prompt.
+
+Its expected output contains five panels. Each panel includes:
+
+Panel number
+
+Panel title
+
+Scene description
+
+Image generation prompt
+
+The outline provides the structure for the detailed story and illustrations.
+
+Story Generation – gemini_pro.py
+
+The generate_story() function expands the outline into narration and character dialogues.
+
+It receives the panel outline and uses Gemini Pro to generate the story content in a structured format suitable for the comic preview.
+
+Image Generation – image_generator.py
+
+The generate_image() function uses Stable Diffusion to create comic illustrations based on the image prompts.
+
+Generated images are saved in the static/panels directory, and their paths are returned for use in the comic layout.
+
+Comic Layout – layout_builder.py
+
+The build_comic_layout() function matches each generated image with its corresponding panel text.
+
+The resulting layout contains the panel number, image path, and story content in the correct sequence.
+
+PDF Export – exporters.py
+
+The save_pdf() function uses FPDF to generate the final comic PDF.
+
+It places panel images and narrative text into a structured page layout and saves the generated file in the static/exports directory.
+
+5.4 Frontend Development
+
+The frontend is built with HTML, CSS, and Jinja2 templates.
+
+1. Homepage – index.html
+
+The homepage includes input fields for the story prompt, character name, setting, tone, and art style. Users submit the form to start comic generation.
+
+2. Comic Preview – comic_preview.html
+
+This page displays the generated comic panel-by-panel, including illustrations, titles, scene descriptions, captions, and narration.
+
+3. Export Success – export_success.html
+
+This page confirms the PDF export process and provides an option to return to the homepage to create another comic.
+
+5.5 API Route Development
+
+The project document describes the following main routes:
+
+Route
+
+	
+
+Method
+
+	
+
+Purpose
+
+
+
+
+/
+
+	
+
+GET
+
+	
+
+Display homepage
+
+
+
+
+/generate
+
+	
+
+POST
+
+	
+
+Generate a comic from form input
+
+
+
+
+/generate-comic/json
+
+	
+
+POST
+
+	
+
+Generate a comic from JSON input
+
+
+
+
+/test-image
+
+	
+
+POST
+
+	
+
+Test image generation
+
+
+
+
+/export-success
+
+	
+
+GET
+
+	
+
+Display export confirmation
+
+The /generate workflow coordinates the following operations:
+
+Receive and validate the user's input.
+
+Generate a five-panel outline.
+
+Create narration and dialogue.
+
+Generate an illustration for each panel.
+
+Build the comic layout.
+
+Generate the PDF.
+
+Display the comic preview and provide the export flow.
+
+5.6 Environment Configuration
+
+Sensitive API keys should be stored in environment variables and excluded from the public GitHub repository.
+
+Example .env.example:
+
+GEMINI_API_KEY=your_api_key_here
+HF_API_KEY=your_huggingface_token_here
+
+The actual .env file must not be uploaded to GitHub.
+
+5.7 Running the Application
+
+After configuring the project and installing the dependencies, run:
+
+uvicorn app.main:app --reload
+
+Open the following address in a browser:
+
+http://127.0.0.1:8000
+
+The FastAPI API documentation is available at:
+
+http://127.0.0.1:8000/docs
+
+5.8 Expected Result
+
+The development phase aims to produce a working web application that accepts user prompts, generates comic stories and illustrations, displays the resulting panels, and exports them into PDF format.
+
+The code snippets above provide the basic application setup and module responsibilities; the full AI API calls, templates, route handlers, and PDF implementation still need to be completed and integrated in the actual project.
