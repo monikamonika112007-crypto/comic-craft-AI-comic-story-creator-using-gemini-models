@@ -147,10 +147,3 @@ Download the comic as a PDF
 
 The expected outcome is a functional web application that transforms a user's creative idea into a complete illustrated comic. It should provide a simple workflow from story input to comic preview and PDF export.
 
-# Team Members - Group 07
-
-| S.No | Team Member | Idea / Suggestion | Category | Group No. |
-|---|---|---|---|---|
-| 1 | Monika V | Developing a feature to generate stories using AI | AI Story Generation | 07 |
-| 2 | Latchaya M | Creating characters and AI-generated images based on the story | AI Image Generation | 07 |
-| 3 | Pavithra U | Designing comic panels and providing an option to download them as a PDF | Comic Design & PDF Export | 07 |
