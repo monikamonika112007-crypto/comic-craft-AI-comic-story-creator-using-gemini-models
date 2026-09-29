@@ -1,0 +1,129 @@
+3.1 Introduction
+
+The Project Design Phase defines the architecture, components, data flow, and user interface of ComicCraft. The system follows a modular architecture with three main components: Frontend, Backend, and AI Integration.
+
+3.2 System Architecture
+
+User
+
+Enters story prompt, character, setting, tone and art style
+
+Frontend
+
+HTML + CSS + Jinja2
+
+Input Form and Comic Preview
+
+Backend
+
+Python + FastAPI
+
+Routing, validation, processing and integration
+
+AI Integration
+
+Gemini Flash
+
+Comic Outline
+
+Gemini Pro
+
+Story & Dialogue
+
+Stable Diffusion
+
+Comic Illustrations
+
+Comic Layout & PDF Export
+
+Layout Builder + FPDF
+
+Final Output
+
+Comic Preview and Downloadable PDF
+
+3.3 System Modules
+
+1. User Input Module
+
+Collects the story prompt, character name, setting, tone, and art style from the user through the homepage.
+
+2. Story Outline Module
+
+Uses Gemini Flash to create a structured five-panel comic outline with panel titles, scene descriptions, and image prompts.
+
+3. Story Generation Module
+
+Uses Gemini Pro to generate detailed narration and dialogues based on the outline.
+
+4. Image Generation Module
+
+Uses Stable Diffusion through Hugging Face Diffusers to generate illustrations for individual panels.
+
+5. Layout Builder Module
+
+Combines the generated images and story content into a structured panel layout.
+
+6. PDF Export Module
+
+Uses FPDF to organize the comic panels, images, and text into a downloadable PDF.
+
+7. Web Interface Module
+
+Uses HTML, CSS, and Jinja2 to display the input form, comic preview, and export success page.
+
+3.4 Data Flow
+3.5 User Interface Design
+
+The application contains three primary web pages:
+
+index.html: Collects user input using a structured form.
+
+comic_preview.html: Displays each generated panel with its image, title, scene description, captions, and narration.
+
+export_success.html: Displays confirmation after the comic export process.
+
+The interface should use clear labels, readable typography, responsive styling, and simple navigation.
+
+3.6 Project Folder Structure
+ComicCraft/
+│
+├── app/
+│   ├── main.py
+│   ├── routes.py
+│   ├── gemini_flash.py
+│   ├── gemini_pro.py
+│   ├── image_generator.py
+│   ├── layout_builder.py
+│   └── exporters.py
+│
+├── templates/
+│   ├── index.html
+│   ├── comic_preview.html
+│   └── export_success.html
+│
+├── static/
+│   ├── panels/
+│   └── exports/
+│
+├── docs/
+│   ├── phase1_ideation.md
+│   ├── phase2_requirements.md
+│   ├── phase3_design.md
+│   ├── phase4_planning.md
+│   ├── phase5_development.md
+│   ├── phase6_testing.md
+│   ├── phase7_documentation.md
+│   └── phase8_demonstration.md
+│
+├── tests/
+├── requirements.txt
+├── .env.example
+├── .gitignore
+└── README.md
+
+This is a suggested repository structure based on the modules described in the project document. It can be adapted to match the actual implementation.
+
+3.7 Expected Result
+
+The design phase establishes a clear structure for the application and explains how user input flows through the backend, AI services, layout builder, and PDF exporter.
