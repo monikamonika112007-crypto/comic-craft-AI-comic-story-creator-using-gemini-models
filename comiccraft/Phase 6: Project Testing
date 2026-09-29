@@ -1,0 +1,269 @@
+6.1 Introduction
+
+The Project Testing Phase verifies that the ComicCraft application works according to its functional and non-functional requirements. Testing is performed on individual modules and on the integrated application to identify errors and improve reliability.
+
+6.2 Objectives of Testing
+
+Verify that user inputs are accepted correctly.
+
+Check the AI story-generation process.
+
+Verify that comic illustrations are generated.
+
+Ensure that images and narration are arranged in the correct order.
+
+Test the PDF export functionality.
+
+Identify and resolve errors.
+
+Verify the overall user experience.
+
+6.3 Types of Testing
+
+1. Unit Testing
+
+Individual functions such as generate_outline(), generate_story(), generate_image(), build_comic_layout(), and save_pdf() are tested separately.
+
+2. Integration Testing
+
+Checks whether the frontend, FastAPI backend, Gemini AI, image generator, layout builder, and PDF exporter work together correctly.
+
+3. Functional Testing
+
+Verifies that each feature performs the expected operation, including form submission, comic generation, preview display, and PDF export.
+
+4. UI Testing
+
+Checks whether input fields, buttons, images, and pages display correctly and whether the interface is easy to navigate.
+
+5. Error Handling Testing
+
+Tests the application's response to invalid inputs, unavailable APIs, image-generation errors, and PDF export failures.
+
+6. Performance Testing
+
+Measures the response time and resource usage of the application during comic generation, taking into account that AI services may have variable processing times.
+
+6.4 Test Cases
+
+The following test cases should be executed and their actual results recorded during implementation.
+
+Test ID
+
+	
+
+Test Scenario
+
+	
+
+Expected Result
+
+
+
+
+TC01
+
+	
+
+Open the homepage
+
+	
+
+Homepage should load
+
+
+
+
+TC02
+
+	
+
+Submit a valid story prompt
+
+	
+
+Story generation should begin
+
+
+
+
+TC03
+
+	
+
+Enter a character name
+
+	
+
+Character details should be accepted
+
+
+
+
+TC04
+
+	
+
+Select a story tone
+
+	
+
+Selected tone should be used
+
+
+
+
+TC05
+
+	
+
+Generate a comic outline
+
+	
+
+Five structured panels should be returned
+
+
+
+
+TC06
+
+	
+
+Generate story narration
+
+	
+
+Narration and dialogue should be created
+
+
+
+
+TC07
+
+	
+
+Generate panel illustrations
+
+	
+
+Images should be created and saved
+
+
+
+
+TC08
+
+	
+
+Build comic layout
+
+	
+
+Images and text should match each panel
+
+
+
+
+TC09
+
+	
+
+Open comic preview
+
+	
+
+Generated panels should be displayed
+
+
+
+
+TC10
+
+	
+
+Download the comic PDF
+
+	
+
+PDF should be generated and downloaded
+
+
+
+
+TC11
+
+	
+
+Submit invalid input
+
+	
+
+Suitable validation feedback should appear
+
+
+
+
+TC12
+
+	
+
+Simulate an AI service failure
+
+	
+
+Error should be handled gracefully
+
+6.5 Testing Results
+To be completed after testing
+
+Use the following table to document the real results after executing the test cases.
+
+Test ID
+
+	
+
+Actual Result
+
+	
+
+Status
+
+
+
+
+TC01–TC12
+
+	
+
+Record the observed result for each test
+
+	
+
+Pass / Fail
+
+A test should be marked as Pass only when the actual output meets its expected result. Failed tests should be documented along with the issue identified and the corrective action taken.
+
+6.6 Bug Tracking
+
+When an error is identified, the team should record:
+
+Bug ID
+
+Error description
+
+Module affected
+
+Steps to reproduce
+
+Expected result
+
+Actual result
+
+Corrective action
+
+Retesting status
+
+6.7 Expected Result
+
+The testing phase should confirm that the application performs its major functions correctly, handles common errors, and produces a complete comic preview and PDF when the required AI services are available.
