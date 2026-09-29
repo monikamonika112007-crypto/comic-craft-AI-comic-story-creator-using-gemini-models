@@ -1,0 +1,210 @@
+8.1 Introduction
+
+The Project Demonstration Phase presents the completed ComicCraft application and explains its purpose, features, technologies, workflow, and output.
+
+A demonstration video should be recorded with screen sharing and the student's voice-over. It should be uploaded to Google Drive with access configured to allow anyone with the link to view it.
+
+8.2 Demonstration Objectives
+
+Introduce the ComicCraft project.
+
+Explain the problem addressed by the application.
+
+Describe the technologies used.
+
+Demonstrate the user interface.
+
+Show the comic-generation workflow.
+
+Present the generated comic and PDF output.
+
+Explain the benefits and possible future enhancements.
+
+8.3 Demo Video Structure
+
+Section
+
+	
+
+Content
+
+	
+
+Suggested Time
+
+
+
+
+Introduction
+
+	
+
+Project name and team introduction
+
+	
+
+30 sec
+
+
+
+
+Purpose
+
+	
+
+Problem statement and objectives
+
+	
+
+45 sec
+
+
+
+
+Technologies
+
+	
+
+Explain the tools and AI models
+
+	
+
+45 sec
+
+
+
+
+Live Demonstration
+
+	
+
+Enter prompt and generate comic
+
+	
+
+2 min
+
+
+
+
+Final Output
+
+	
+
+Show comic preview and PDF
+
+	
+
+1 min
+
+
+
+
+Benefits
+
+	
+
+Explain the applications and advantages
+
+	
+
+30 sec
+
+
+
+
+Conclusion
+
+	
+
+Summarize the project
+
+	
+
+30 sec
+
+
+
+
+Total
+
+		
+
+Around 6 minutes
+
+8.4 Demo Video Script
+Writing
+
+1. Introduction
+
+Good morning everyone.
+
+We are here to present our project titled "ComicCraft – AI Comic Story Creator using Gemini Models."
+
+Our project is an AI-based web application that generates personalized comic stories and illustrations using Artificial Intelligence.
+
+2. Purpose of the Project
+
+The main purpose of our project is to simplify the comic creation process. Creating comics manually requires storytelling, drawing skills, and considerable time.
+
+Our application helps users transform their creative ideas into illustrated comic stories using AI.
+
+3. Technologies Used
+
+We developed this project using Python and FastAPI for the backend, HTML and CSS for the frontend, and Jinja2 for dynamic webpage rendering.
+
+We use Gemini AI models for story generation and Stable Diffusion for creating comic illustrations. FPDF is used to export the final comic into PDF format.
+
+4. Working Process
+
+First, the user enters a story prompt, character name, setting, tone, and preferred art style.
+
+After submitting the form, the application generates a structured comic outline using Gemini Flash. Gemini Pro then generates detailed narration and character dialogues.
+
+Next, Stable Diffusion generates illustrations for the comic panels. The backend organizes the text and images into a structured comic layout and displays the result on the preview page.
+
+5. Project Demonstration
+
+Now, we will demonstrate how the ComicCraft application works.
+
+We enter a sample story prompt, choose the character details, select the setting, tone, and art style, and submit the form.
+
+The application processes the input and generates the comic panels. We can view the illustrations, panel titles, narration, and dialogues on the comic preview page.
+
+We can then use the PDF export option to save the completed comic.
+
+6. Benefits
+
+ComicCraft simplifies comic creation, reduces manual effort, and makes AI-assisted storytelling accessible to users without advanced drawing skills.
+
+It can be used for creative storytelling, educational content, and personal comic projects.
+
+7. Conclusion
+
+To conclude, ComicCraft combines AI-based story generation, image generation, and PDF export in a single web application.
+
+This project demonstrates how Artificial Intelligence can support creativity and make digital comic creation easier.
+
+Thank you.
+
+8.5 Demonstration Checklist
+
+Demo preparation checklist
+
+0/12 completed
+Open the ComicCraft homepage
+Explain the purpose and objectives
+Show the story prompt input form
+Enter a sample story and character details
+Select the tone and art style
+Generate the comic
+Show the generated panels and dialogues
+Demonstrate the PDF download
+Show the final PDF output
+Explain the benefits and conclusion
+Upload the recorded demo to Google Drive
+Set Drive access to Anyone with the link can view
+Reset checklist
+8.6 Expected Result
+
+The demonstration should show the working application from initial user input through comic generation, preview, and PDF export. The final video should clearly explain the project and demonstrate its actual working features.
