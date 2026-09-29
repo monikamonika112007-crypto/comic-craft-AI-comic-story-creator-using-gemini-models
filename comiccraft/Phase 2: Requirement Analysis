@@ -1,0 +1,265 @@
+2.1 Introduction
+
+Requirement Analysis identifies the hardware, software, technologies, and functional capabilities needed to develop and operate the ComicCraft application.
+
+The system is designed using Python, FastAPI, Gemini AI models, Stable Diffusion, HTML, CSS, and Jinja2.
+
+2.2 Functional Requirements
+
+The system should allow users to enter a story prompt.
+
+The system should accept a character name and story setting.
+
+The system should allow users to select the story tone and art style.
+
+The system should generate a structured five-panel comic outline.
+
+The system should generate narration and character dialogues.
+
+The system should create illustrations for each comic panel.
+
+The system should display the generated comic on a preview page.
+
+The system should organize the panels into a structured layout.
+
+The system should generate a downloadable PDF.
+
+The system should provide appropriate error messages if an operation fails.
+
+2.3 Non-Functional Requirements
+
+Usability: The interface should be simple and easy to understand.
+
+Performance: The application should process requests efficiently, subject to AI model response times.
+
+Reliability: The system should handle API errors and invalid inputs appropriately.
+
+Maintainability: The source code should be organized into separate modules.
+
+Scalability: The modular architecture should support future improvements.
+
+Security: API keys and access tokens should be stored securely.
+
+Compatibility: The web interface should be accessible through commonly used browsers.
+
+2.4 Hardware Requirements
+
+Component
+
+	
+
+Minimum suggested requirement
+
+
+
+
+Processor
+
+	
+
+Intel Core i3 or equivalent
+
+
+
+
+RAM
+
+	
+
+8 GB
+
+
+
+
+Storage
+
+	
+
+10 GB free space
+
+
+
+
+System
+
+	
+
+Windows, macOS, or Linux
+
+
+
+
+Internet
+
+	
+
+Required for cloud AI API access
+
+
+
+
+Graphics
+
+	
+
+GPU optional for local Stable Diffusion; depends on the selected image-generation setup
+
+These are suggested development requirements, not measured minimum specifications from the project document. Local image generation may require additional hardware resources.
+
+2.5 Software Requirements
+
+Software / Technology
+
+	
+
+Purpose
+
+
+
+
+Python
+
+	
+
+Main programming language
+
+
+
+
+FastAPI
+
+	
+
+Backend web framework
+
+
+
+
+Uvicorn
+
+	
+
+ASGI server
+
+
+
+
+HTML
+
+	
+
+Webpage structure
+
+
+
+
+CSS
+
+	
+
+Webpage styling
+
+
+
+
+Jinja2
+
+	
+
+Dynamic HTML templates
+
+
+
+
+Gemini AI
+
+	
+
+Story outline and narration generation
+
+
+
+
+Stable Diffusion
+
+	
+
+Comic illustration generation
+
+
+
+
+Hugging Face Diffusers
+
+	
+
+Image generation library
+
+
+
+
+PyTorch
+
+	
+
+Machine learning framework
+
+
+
+
+FPDF
+
+	
+
+PDF creation
+
+
+
+
+Pillow
+
+	
+
+Image processing
+
+
+
+
+Git & GitHub
+
+	
+
+Version control and project submission
+
+
+
+
+Visual Studio Code
+
+	
+
+Code editor
+
+2.6 AI Model Requirements
+
+Gemini Flash: Generates a structured five-panel comic outline.
+
+Gemini Pro: Expands the outline into detailed narration and character dialogues.
+
+Stable Diffusion: Generates comic-style illustrations from image prompts.
+
+The uploaded document refers to Gemini 1.5 Flash, Gemini 1.5 Pro, and Stable Diffusion 1.5 as its selected models. Actual availability and compatibility should be checked during implementation.
+
+2.7 Feasibility Study
+
+Technical Feasibility: The project uses Python-based web development tools and AI model integrations described in the project document.
+
+Operational Feasibility: Users can interact with the application through a web browser without needing illustration software or advanced drawing skills.
+
+Economic Feasibility: Open-source development tools and available AI service plans can be used. However, API usage, cloud computing, and image generation may involve costs.
+
+Time Feasibility: The modular development approach allows the project to be divided into smaller tasks and completed phase-by-phase.
+
+2.8 Expected Result
+
+The requirement analysis defines the technical foundation and features needed to develop a web application that generates personalized comic stories, illustrations, previews, and PDF files.
