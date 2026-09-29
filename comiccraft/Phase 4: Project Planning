@@ -1,0 +1,285 @@
+4.1 Introduction
+
+The Project Planning Phase defines the activities, responsibilities, resources, and estimated time required to complete ComicCraft. The project is divided into milestones to ensure systematic development and successful completion.
+
+4.2 Project Development Plan
+
+Milestone
+
+	
+
+Activity
+
+	
+
+Estimated Duration
+
+
+
+
+1
+
+	
+
+Brainstorming and Ideation
+
+	
+
+2 days
+
+
+
+
+2
+
+	
+
+Requirement Analysis
+
+	
+
+3 days
+
+
+
+
+3
+
+	
+
+Project Design
+
+	
+
+3 days
+
+
+
+
+4
+
+	
+
+Project Planning
+
+	
+
+2 days
+
+
+
+
+5
+
+	
+
+Project Development
+
+	
+
+10 days
+
+
+
+
+6
+
+	
+
+Project Testing
+
+	
+
+4 days
+
+
+
+
+7
+
+	
+
+Project Documentation
+
+	
+
+3 days
+
+
+
+
+8
+
+	
+
+Project Demonstration
+
+	
+
+2 days
+
+
+
+
+Total
+
+		
+
+29 days
+
+Estimated schedule for planning purposes. Actual duration depends on team size, technical experience, and AI service availability.
+
+4.3 Team Formation
+
+The project can be completed by a team of four members, with each member taking responsibility for a particular area.
+
+Team Member
+
+	
+
+Responsibility
+
+
+
+
+Member 1
+
+	
+
+Project research, requirements and documentation
+
+
+
+
+Member 2
+
+	
+
+Frontend development using HTML, CSS and Jinja2
+
+
+
+
+Member 3
+
+	
+
+Backend development using Python and FastAPI
+
+
+
+
+Member 4
+
+	
+
+AI integration, testing and demonstration
+
+All team members should participate in integration, debugging, documentation review, and the final presentation.
+
+4.4 Resource Planning
+
+Human Resources
+
+Frontend Developer
+
+Backend Developer
+
+AI Integration Developer
+
+Testing and Documentation Coordinator
+
+Technical Resources
+
+Computer or laptop
+
+Visual Studio Code
+
+Python and required libraries
+
+Gemini API access
+
+Stable Diffusion model access
+
+GitHub repository
+
+Internet connection
+
+4.5 Risk Management
+
+Possible Risk
+
+	
+
+Proposed Solution
+
+
+
+
+Gemini API errors
+
+	
+
+Add exception handling and retry where appropriate
+
+
+
+
+Slow image generation
+
+	
+
+Manage requests sequentially and show progress
+
+
+
+
+Insufficient hardware resources
+
+	
+
+Use a suitable hosted image-generation service
+
+
+
+
+Invalid user input
+
+	
+
+Apply input validation
+
+
+
+
+PDF layout issues
+
+	
+
+Test image sizes and text formatting
+
+
+
+
+API key exposure
+
+	
+
+Store credentials in environment variables
+
+
+
+
+Team delays
+
+	
+
+Divide tasks and track milestone completion
+
+4.6 Project Monitoring
+
+Project progress can be monitored using a shared task checklist, regular team discussions, GitHub commits, and milestone reviews. Each completed phase should be reviewed before moving on to the next major activity.
+
+4.7 Expected Result
+
+The planning phase provides a schedule, task allocation, resource requirements, and risk-management approach for the systematic development of ComicCraft.
