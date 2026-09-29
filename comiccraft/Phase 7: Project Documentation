@@ -1,0 +1,206 @@
+7.1 Introduction
+
+The Project Documentation Phase records the complete development process of ComicCraft. It provides information about the project objectives, requirements, system design, implementation, testing, and final output.
+
+Documentation helps developers, evaluators, and future users understand the system and maintain or enhance the application.
+
+7.2 Documentation Structure
+
+The final Project Report can be organized as follows:
+
+COMICCRAFT – PROJECT REPORT
+
+Cover Page
+Certificate and Declaration (if required by the college)
+Acknowledgement
+Abstract
+Table of Contents
+Introduction
+Problem Statement
+Objectives and Scope
+Requirement Analysis
+System Architecture and Design
+Project Planning
+System Development and Implementation
+Testing and Results
+Output Screenshots
+Conclusion
+Future Enhancements
+References
+7.3 Abstract
+
+ComicCraft is an AI-powered web application designed to generate personalized comic stories and illustrations from user-provided prompts. The system uses Python and FastAPI for backend processing, HTML, CSS, and Jinja2 for the frontend, and Google's Gemini AI models for story generation. Stable Diffusion is used to create comic-style illustrations based on the generated scene descriptions.
+
+The application allows users to specify a story prompt, character name, setting, tone, and art style. It generates a structured five-panel outline, detailed narration, character dialogues, and corresponding illustrations. The generated content is organized into a comic layout and can be exported as a PDF file.
+
+ComicCraft aims to simplify the comic creation process by combining AI-based storytelling, image generation, and document export in a single web-based platform.
+
+7.4 Technology Documentation
+
+Technology
+
+	
+
+Role in the Project
+
+
+
+
+Python
+
+	
+
+Application logic
+
+
+
+
+FastAPI
+
+	
+
+Backend and API routing
+
+
+
+
+Uvicorn
+
+	
+
+Web server
+
+
+
+
+Gemini Flash
+
+	
+
+Structured story outline
+
+
+
+
+Gemini Pro
+
+	
+
+Narration and dialogue
+
+
+
+
+Stable Diffusion
+
+	
+
+Illustration generation
+
+
+
+
+Hugging Face Diffusers
+
+	
+
+Image-generation pipeline
+
+
+
+
+HTML and CSS
+
+	
+
+Frontend design
+
+
+
+
+Jinja2
+
+	
+
+Dynamic content rendering
+
+
+
+
+FPDF
+
+	
+
+PDF generation
+
+
+
+
+GitHub
+
+	
+
+Source-code management
+
+7.5 Source Code Documentation
+
+Each Python module should contain comments and descriptions explaining its purpose, inputs, outputs, and important processing steps.
+
+For example:
+
+def generate_outline(prompt):
+    """
+    Generate a structured five-panel
+    comic outline from a story prompt.
+
+    Args:
+        prompt: User-provided story idea.
+
+    Returns:
+        Structured comic panel data.
+    """
+    pass
+
+This is a documentation example; the function must be implemented to connect to the selected AI model.
+
+7.6 GitHub Repository Documentation
+
+The entire project should be maintained in a Public GitHub Repository, with separate folders for the source code, templates, generated assets, tests, and phase-wise documentation.
+
+ComicCraft – GitHub Repository
+
+Public repository containing project source code and all eight phase documents.
+
+Suggested phase-wise documentation
+
+docs/
+├── phase1_ideation.md
+├── phase2_requirements.md
+├── phase3_design.md
+├── phase4_planning.md
+├── phase5_development.md
+├── phase6_testing.md
+├── phase7_documentation.md
+└── phase8_demonstration.md
+
+Upload the actual documents, source code, and relevant screenshots as each phase is completed. Keep API keys and private credentials out of the repository.
+
+7.7 User Documentation
+
+A user guide should explain how to:
+
+Open the ComicCraft application.
+
+Enter the story prompt and character details.
+
+Select the setting, tone, and art style.
+
+Submit the form.
+
+View the generated comic panels.
+
+Download the comic as a PDF.
+
+7.8 Expected Result
+
+The documentation phase should produce a complete Project Report, source-code explanations, test records, user instructions, and a well-organized public GitHub repository.
