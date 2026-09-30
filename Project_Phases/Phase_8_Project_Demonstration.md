@@ -2,7 +2,7 @@
 
 ## Demonstration Deliverables
 - **Live Application URL: http://127.0.0.1:8000
-- **Project Demonstration Video:https://drive.google.com/file/d/1Ql_Ja43QqjRNXoB_OtOY33wKBWvpLjI2/view?usp=drivesdk
+- **Project Demonstration Video: https://drive.google.com/file/d/1SmyWR-jfgZgeeOO8S_tkc9oseA6beSMx/view?usp=drivesdk
 
 ## Video Walkthrough Outline
 1. **Introduction:** Presentation of team members and project title ( ComicCraft - Al Comic Story Creator using Gemini Models).
